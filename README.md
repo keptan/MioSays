@@ -9,7 +9,7 @@ example: 189x482;+79+71;487
 * size of text box
 * offset geometry for textbox from top left
 * height offset for tail from top
-The avatar images are encoded with one geometry 
 
+The avatar images are encoded with one geometry 
 example: 214
 * height offset of mouth from top

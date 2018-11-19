@@ -10,6 +10,8 @@ iconPos=${sizeArgs[2]}
 iconWidth=$( identify -ping -format "%w" icons/$icon);
 mouthDown=$(( $downFromTitle+$iconPos-$icon))
 
-convert -background transparent -fill black -font FreeSerif -size ${sizeArgs[0]} -gravity Center caption:@- miff:- |\
-convert bubbles/$bubble - -gravity NorthWest -compose Over -geometry ${sizeArgs[1]} -composite miff:- |\
+noLineText="$(tr -d '\n' )"
+
+convert -background transparent -fill black -font KAWAIITEGAKIMOJI -size ${sizeArgs[0]} -gravity Center caption:"$noLineText" miff:- |\
+convert bubbles/$bubble - -gravity NorthWest -compose Over -geometry "${sizeArgs[1]}" -composite miff:- |\
 convert -background transparent -page -300-0 title.png -page +0+$downFromTitle - -page -$iconWidth+$mouthDown icons/$icon -layers merge $1

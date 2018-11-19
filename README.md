@@ -1,6 +1,7 @@
 # Naganohara-Says
 generates captions using random bubbles, random images, and piped in text
-fortune -s | ./mioSays.sh test.png
+
+```fortune -s | ./mioSays.sh test.png```
 ![Examples](https://u.teknik.io/xHsGe.png)
 
 # Filename Encodings

@@ -2,7 +2,7 @@
 generates captions using random bubbles, random images, and piped in text
 
 ```fortune -s | ./mioSays.sh test.png```
-![Examples](https://u.teknik.io/xHsGe.png)
+![Examples](https://u.teknik.io/8Wekr.png)
 
 # Filename Encodings
 The bubble images are encoded with three geometries 

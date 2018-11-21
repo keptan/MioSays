@@ -1,4 +1,4 @@
-# Naganohara-Says
+# Mio Says: Anime caption generator!
 generates captions using random bubbles, random images, and piped in text
 
 ```fortune -s | ./mioSays.sh test.png```
